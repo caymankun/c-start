@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
+<meta http-equiv="content-language" content="ja" />
+<title>c-start</title>
+<meta name="description" content="caymankunスタートページ" />
+<meta name="keywords" content="caymankunスタートページ,caymankun" />
+<meta property="og:title" content="c-start" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://c-start.f5.si" />
+<meta property="og:description" content="caymankunスタートページ" />
+<meta property="og:site_name" content="caymankunスタートページ" />
+<meta property="og:image" content="https://c-start.f5.si/image/cstart-logo.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="apple-icon.png">
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="robots" content="NOARCHIVE" />
+<meta http-equiv="pragma" content="no-cache" />
+<link rel="stylesheet" href="style.css" />
+<meta name="google" content="notranslate" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="nav">
+            <select id="selecter" name="selecter">
+                <optgroup label="検索エンジン">
+                    <option value="https://google.com/search?q=" id="google">google</option>
+                    <option value="https://bing.com/search?q=" id="bing">bing</option>
+                    <option value="https://search.yahoo.co.jp/search?p=" id="yahoo">yahoo</option>
+                </optgroup>
+                <optgroup label="sns">
+                    <option value="https://www.youtube.com/results?search_query=" id="youtube">youtube</option>
+                    <option value="https://twitter.com/search?q=" id="twitter">twitter</option>
+                    <option value="https://www.tiktok.com/search?q=" id="tiktok">tiktok</option>
+                </optgroup>
+            </select><b> 検索先</b>
+        </div>
+        
+        <div class="home">
+            <img class="logo" src="./image/cstart-logo.png" height="150" width="150">
+            <form method="get" action="">
+                <div class="inputa">
+                    <input class="nr"- placeholder="検索する文字を入力" type="text"name="q" id="inpu">
+                    <button class="sb" onclick="ee()">検索</button>
+                </div>
+            </form>
+        </div>
+        <span class="tm">by caymankun</span>
+        <script>        
+    function  ee(){
+   $(function(){
+    const inpu = document.getElementById("inpu").value;
+    const selecter = document.getElementById("selecter").value;
+    window.open(selecter + inpu);
+   });
+}
+
+        </script>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
