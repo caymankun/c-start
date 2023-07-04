@@ -41,9 +41,9 @@
         
         <div class="home">
             <img class="logo" src="./image/cstart-logo.png" height="150" width="150">
-            <form method="post" action="">
+            <form name="post" method="post" action="">
                 <div class="inputa">
-                    <input class="nr"- placeholder="検索する文字を入力" type="text"name="q" id="inpu">
+                    <input class="nr" placeholder="検索する文字を入力" type="text" name="q" id="inpu">
                     <button class="sb" onclick="ee()">検索</button>
                 </div>
             </form>
@@ -52,9 +52,11 @@
         <script>        
     function  ee(){
    $(function(){
-    const inpu = document.getElementById("inpu").value;
     const selecter = document.getElementById("selecter").value;
-    window.open(selecter + inpu);
+    const inpu = document.getElementById("inpu").value;
+    document.post.action = selecter ;
+    window.open(selecter + inpu)
+
    });
 }
 
