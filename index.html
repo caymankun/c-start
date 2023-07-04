@@ -41,7 +41,7 @@
         
         <div class="home">
             <img class="logo" src="./image/cstart-logo.png" height="150" width="150">
-            <form name="post" method="post" action="">
+            <form method="dialog" action="">
                 <div class="inputa">
                     <input class="nr" placeholder="検索する文字を入力" type="text" name="q" id="inpu">
                     <button class="sb" onclick="ee()">検索</button>
@@ -50,17 +50,12 @@
         </div>
         <span class="tm">by caymankun</span>
         <script>        
-    function  ee(){
-   $(function(){
+function  ee(){
     const selecter = document.getElementById("selecter").value;
     const inpu = document.getElementById("inpu").value;
-    document.post.action = selecter ;
-    window.open(selecter + inpu)
-
-   });
+    window.open(selecter + inpu);
 }
 
         </script>
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
