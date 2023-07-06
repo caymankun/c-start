@@ -43,7 +43,7 @@
             <img class="logo" src="./image/cstart-logo.png" height="150" width="150">
             <form method="dialog" action="">
                 <div class="inputa">
-                    <input class="nr" placeholder="検索する文字を入力" type="text" name="q" id="inpu">
+                    <input class="nr" onkeypress="if(event.key === 'Enter') { ee(); return false; }" placeholder="検索する文字を入力" type="text" name="q" id="inpu">
                     <button class="sb" onclick="ee()">検索</button>
                 </div>
             </form>
