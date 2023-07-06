@@ -49,12 +49,18 @@
             </form>
         </div>
         <span class="tm">by caymankun</span>
-        <script>        
+        <script>
+    const selecter = document.getElementById("selecter").value;
+    selecter.value = document.cookie;
+};
 function  ee(){
     const selecter = document.getElementById("selecter").value;
     const inpu = document.getElementById("inpu").value;
     window.open(selecter + inpu);
-}
+};
+function cokie(){
+    document.cookie = 'selector=' + selecter;
+};
 
         </script>
     </body>
