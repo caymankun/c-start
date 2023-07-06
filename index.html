@@ -45,25 +45,16 @@
                 <div class="inputa">
                     <input class="nr" placeholder="検索する文字を入力" type="text" name="q" id="inpu">
                     <button class="sb" onclick="ee()">検索</button>
-                    <button class="sb" onclick="cokie()">test</button>
                 </div>
             </form>
         </div>
         <span class="tm">by caymankun</span>
         <script>
-const selecter = document.cookie
-  .split('; ')
-  .find(row => row.startsWith('selector'))
-  .split('=')[1];
 function  ee(){
     const selecter = document.getElementById("selecter").value;
     const inpu = document.getElementById("inpu").value;
     window.open(selecter + inpu);
 };
-function cokie(){
-    document.cookie = 'selector=' + selecter;
-};
-
         </script>
     </body>
 </html>
