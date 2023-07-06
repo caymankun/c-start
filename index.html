@@ -51,8 +51,10 @@
         </div>
         <span class="tm">by caymankun</span>
         <script>
-    const selecter = document.getElementById("selecter").value;
-    selecter.value = document.cookie;
+const selecter = document.cookie
+  .split('; ')
+  .find(row => row.startsWith('selector'))
+  .split('=')[1];
 function  ee(){
     const selecter = document.getElementById("selecter").value;
     const inpu = document.getElementById("inpu").value;
