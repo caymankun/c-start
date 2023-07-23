@@ -17,11 +17,13 @@
     border: 3px solid rgb(163, 255, 212);
     outline: none;
     background-color: white;
+    border-radius: 100px;
 }
 .nr{
     padding: 20px;
     border: 3px solid rgb(163, 255, 212);
     outline: none;
+    border-radius: 100px;
 }
 .tm{
     position: fixed;
@@ -34,4 +36,5 @@
 .logo{
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 100px;
 }
